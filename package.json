@@ -1,24 +1,56 @@
+//{
+//  "name": "jquery-node-contact-list",
+//  "version": "0.0.0",
+//  "description": "Simple contact list app using jQuery and Node.js",
+//  "main": "server.js",
+//  "scripts": {
+//    "build": "node_modules/.bin/browserify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
+//    "watch": "watchify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
+//    "start": "npm run build && node server.js",
+//    "dev": "npm run watch | nodemon server.js"
+//  },
+//  "author": "ASUS K52",
+//  "license": "...",
+//  "dependencies": {
+//    "body-parser": "^1.15.1",
+//    "bootstrap": "^3.3.6",
+//    "browserify": "^13.0.1",
+//    "browserify-css": "^0.9.1",
+//    "express": "^4.13.4",
+//    "jquery": "^2.2.4",
+//    "jsonfile": "^2.3.1",
+//    "normalize.css": "^4.1.1"
+//  }
+//}
+
 {
-  "name": "jquery-node-contact-list",
-  "version": "0.0.0",
-  "description": "Simple contact list app using jQuery and Node.js",
-  "main": "server.js",
-  "scripts": {
-    "build": "node_modules/.bin/browserify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
-    "watch": "watchify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
-    "start": "npm run build && node server.js",
-    "dev": "npm run watch | nodemon server.js"
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "8.9.1"
   },
-  "author": "ASUS K52",
-  "license": "...",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "bootstrap": "^3.3.6",
-    "browserify": "^13.0.1",
-    "browserify-css": "^0.9.1",
-    "express": "^4.13.4",
-    "jquery": "^2.2.4",
-    "jsonfile": "^2.3.1",
-    "normalize.css": "^4.1.1"
-  }
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
