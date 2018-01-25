@@ -1,0 +1,24 @@
+{
+  "name": "jquery-node-contact-list",
+  "version": "0.0.0",
+  "description": "Simple contact list app using jQuery and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "build": "node_modules/.bin/browserify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
+    "watch": "watchify -t browserify-css public/js/app.js -o public/js/bundle.js -d",
+    "start": "npm run build && node server.js",
+    "dev": "npm run watch | nodemon server.js"
+  },
+  "author": "ASUS K52",
+  "license": "...",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "browserify": "^13.0.1",
+    "browserify-css": "^0.9.1",
+    "express": "^4.13.4",
+    "jquery": "^2.2.4",
+    "jsonfile": "^2.3.1",
+    "normalize.css": "^4.1.1"
+  }
+}
